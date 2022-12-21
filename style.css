@@ -1,0 +1,152 @@
+:root{
+    --font: 'Economica', sans-serif;
+
+    --main-dark: rgb(36, 36, 37);
+    --secondary-dark: rgb(49, 49, 51);
+
+    --white: #fff;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--main-dark);
+    font-family: var(--font);
+    height: 100vh;
+}
+
+.container{
+    height: 40rem;
+    width: 30rem;
+
+    background-color: var(--white);
+
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    background-color: var(--secondary-dark);
+}
+
+/*CLOCK DESIGN*/
+
+.analog-clock{
+    height: 20rem;
+    width: 20rem;
+    
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    border-radius: 50%;
+
+    border: 0.2rem solid var(--white);
+}
+
+.analog-clock__dial span {
+    
+    color: var(--white);
+
+    font-size: 1.5rem;
+
+    position: absolute;
+}
+
+/* 12 */
+.analog-clock__dial span:nth-child(1){
+    top: 0;
+    left: calc(50% - 0.625rem);
+}
+
+/* 3 */
+
+.analog-clock__dial span:nth-child(2){
+    top: calc(50% - 0.75rem);
+    right: 0.5rem;
+}
+
+/* 6 */
+
+.analog-clock__dial span:nth-child(3){
+    top: calc(100% - 1.75rem);
+    left: calc(50% - 0.5rem);
+}
+
+/* 9 */
+
+.analog-clock__dial span:nth-child(4){
+    top: calc(50% - 0.75rem);
+    left: 0.5rem;
+}
+
+/*CENTRAL BUTTON*/
+
+.analog-clock__central-button {
+    height: 1.5rem;
+    width: 1.5rem;
+
+    background-color: var(--white);
+
+    border-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+/*HOURS HAND*/
+
+.analog-clock__hours-hand {
+
+    height: 25%;
+    width: 0.5rem;
+
+    background-color: var(--white);
+
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(calc(50% - 0.5rem), -100%);
+}
+
+/*MINUTES HAND*/
+
+.analog-clock__minutes-hand {
+    
+    height: 40%;
+    width: 0.5rem;
+
+    background-color: var(--white);
+
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(calc(50% - 0.5rem), -100%);
+}
+
+/*SECONDS HAND*/
+
+.analog-clock__seconds-hand {
+    height: 42%;
+    width: 0.25rem;
+
+    background-color: var(--white);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(calc(50% - 0.25rem), -100%);
+
+}
+
