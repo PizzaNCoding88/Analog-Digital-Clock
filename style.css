@@ -103,36 +103,42 @@ body{
 
 .analog-clock__hours-hand {
 
-    height: 25%;
-    width: 0.5rem;
+    height: 0.5rem;
+    width: 25%;
+
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
 
     background-color: var(--white);
 
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(calc(50% - 0.5rem), -100%);
+    top: calc((50% - 0.25rem));
+    right: 50%;
+
+    transform-origin: 100%;
+    transform: rotate(90deg);
+
 }
 
 /*MINUTES HAND*/
 
 .analog-clock__minutes-hand {
     
-    height: 40%;
-    width: 0.5rem;
+    height: 0.5rem;
+    width: 40%;
 
     background-color: var(--white);
 
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(calc(50% - 0.5rem), -100%);
+    right: 50%;
+
+    transform: rotate(90deg);
+    transform-origin: 100%;
+
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    
 }
 
 /*SECONDS HAND*/
@@ -148,5 +154,6 @@ body{
     left: 50%;
     transform: translate(calc(50% - 0.25rem), -100%);
 
+    transform-origin: 100% 0;
 }
 
