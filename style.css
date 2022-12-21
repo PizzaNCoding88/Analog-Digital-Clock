@@ -144,16 +144,16 @@ body{
 /*SECONDS HAND*/
 
 .analog-clock__seconds-hand {
-    height: 42%;
-    width: 0.25rem;
+    height: 0.25rem;
+    width: 42%;
 
     background-color: var(--white);
 
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(calc(50% - 0.25rem), -100%);
-
+    right: 50%;
+    
+    transform: rotate(90deg);
     transform-origin: 100% 0;
 }
 
