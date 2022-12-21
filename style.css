@@ -58,7 +58,7 @@ body{
 /* 12 */
 .analog-clock__dial span:nth-child(1){
     top: 0;
-    left: calc(50% - 0.625rem);
+    left: calc(50% - 0.3rem);
 }
 
 /* 3 */
@@ -72,7 +72,7 @@ body{
 
 .analog-clock__dial span:nth-child(3){
     top: calc(100% - 1.75rem);
-    left: calc(50% - 0.5rem);
+    left: calc(50% - 0.25rem);
 }
 
 /* 9 */
