@@ -5,6 +5,8 @@
     --secondary-dark: rgb(49, 49, 51);
 
     --white: #fff;
+
+    --box-sh-dm: 2px 2px 10px 10px rgba(255, 255, 255, 0.178);
 }
 
 body{
@@ -33,5 +35,6 @@ body{
     background-color: var(--secondary-dark);
 
     border-radius: 10px;
-    box-shadow: 2px 2px 10px 10px rgba(255, 255, 255, 0.178);
+    /* box-shadow: 2px 2px 10px 10px rgba(255, 255, 255, 0.178); */
+    box-shadow: var(--box-sh-dm);
 }

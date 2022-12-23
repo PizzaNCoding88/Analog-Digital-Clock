@@ -39,6 +39,8 @@ setDate;
 const analogClock = document.querySelector(".analog-clock");
 const digitClock = document.querySelector(".digital-clock");
 
+const container = document.querySelector(".container");
+
 const textAD = document.querySelector(".toggle span");
 
 
@@ -51,11 +53,25 @@ function toggle() {
         toggle.classList.add('active');
         analogClock.style.visibility = "hidden";
         digitClock.style.visibility = "visible";
+        container.style.padding = "8rem 3rem";
         textAD.innerHTML = "Digital";
     } else {
         toggle.classList.remove('active');
         analogClock.style.visibility = "visible";
         digitClock.style.visibility = "hidden";
+        container.style.padding = "17rem 0";
         textAD.innerHTML = "Analog";
     }
 };
+
+//POSITION
+
+const successCallback = (position) => {
+    console.log(position);
+  };
+  
+  const errorCallback = (error) => {
+    console.log(error);
+  };
+  
+  navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
