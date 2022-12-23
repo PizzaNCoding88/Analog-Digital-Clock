@@ -1,0 +1,128 @@
+
+/*CLOCK DESIGN*/
+
+.analog-clock{
+    height: 20rem;
+    width: 20rem;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    border-radius: 50%;
+
+    border: 0.2rem solid var(--white);
+}
+
+.analog-clock__dial span {
+    
+    color: var(--white);
+
+    font-size: 1.5rem;
+
+    position: absolute;
+}
+
+/* 12 */
+.analog-clock__dial span:nth-child(1){
+    top: 0;
+    left: calc(50% - 0.3rem);
+}
+
+/* 3 */
+
+.analog-clock__dial span:nth-child(2){
+    top: calc(50% - 0.75rem);
+    right: 0.5rem;
+}
+
+/* 6 */
+
+.analog-clock__dial span:nth-child(3){
+    top: calc(100% - 1.75rem);
+    left: calc(50% - 0.25rem);
+}
+
+/* 9 */
+
+.analog-clock__dial span:nth-child(4){
+    top: calc(50% - 0.75rem);
+    left: 0.5rem;
+}
+
+/*CENTRAL BUTTON*/
+
+.analog-clock__central-button {
+    height: 1.5rem;
+    width: 1.5rem;
+
+    background-color: var(--white);
+
+    border-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+/*HOURS HAND*/
+
+.analog-clock__hours-hand {
+
+    height: 0.5rem;
+    width: 25%;
+
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+
+    background-color: var(--white);
+
+    position: absolute;
+    top: calc((50% - 0.25rem));
+    right: 50%;
+
+    transform-origin: 100%;
+    transform: rotate(90deg);
+
+}
+
+/*MINUTES HAND*/
+
+.analog-clock__minutes-hand {
+    
+    height: 0.5rem;
+    width: 40%;
+
+    background-color: var(--white);
+
+    position: absolute;
+    top: 50%;
+    right: 50%;
+
+    transform: rotate(90deg);
+    transform-origin: 100%;
+
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    
+}
+
+/*SECONDS HAND*/
+
+.analog-clock__seconds-hand {
+    height: 0.25rem;
+    width: 42%;
+
+    background-color: var(--white);
+
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    
+    transform: rotate(90deg);
+    transform-origin: 100% 0;
+}
+

@@ -1,0 +1,25 @@
+.digital-clock {
+    text-align: center;
+
+    visibility: hidden;
+}
+
+.digital-clock__hours,
+.digital-clock__minutes,
+.digital-clock__seconds, p{
+    display: inline;
+    
+    color: #fff;
+
+    font-size: 9rem;
+
+    padding: 0 0.5rem 0 0;
+}
+
+.digital-clock__hours::after,
+.digital-clock__minutes::after {
+    content:":";
+
+    margin-left: 0.5rem;
+
+}
