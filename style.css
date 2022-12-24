@@ -1,12 +1,21 @@
 :root{
     --font: 'Economica', sans-serif;
 
-    --main-dark: rgb(36, 36, 37);
-    --secondary-dark: rgb(49, 49, 51);
+    --main-dark: #242425;
+    --secondary-dark: #313133;
 
     --white: #fff;
 
     --box-sh-dm: 2px 2px 10px 10px rgba(255, 255, 255, 0.178);
+}
+
+.lightMode{
+    --main-dark: #f7f3f2;
+    --secondary-dark: #ede7e6;
+
+    --white: #242425;
+
+    --box-sh-dm: 2px 2px 10px 10px rgba(27, 27, 27, 0.178);
 }
 
 body{

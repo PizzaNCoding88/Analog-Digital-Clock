@@ -1,6 +1,6 @@
 /*Analog/digital slider*/
 
-.toggle {
+.toggle, .toggle-light {
     position: relative;
     width: 40px;
     height: 20px;
@@ -24,18 +24,18 @@
 }
 
 .active {
-    border-color: rgb(85, 227, 180);
+    border-color: var(--white);
 }
 
 .active + .text {
-    color: rgb(85, 227, 180);
+    color: var(--white);
 }
 
 .active .circle {
     left: 100%;
     transform: translateX(-100%);
     transition: .3s;
-    background-color: rgb(85, 227, 180);
+    background-color: var(--white);
 }
 
 .container-1{
@@ -45,13 +45,23 @@
     display: inline-block;
 }
 
-.toggle span{
+.toggle span, .toggle-light span{
     font-family: var(--font);
-
-    color: #fff;
+    font-weight: bold;
+    color: var(--white);
 
     position: absolute;
     top: 0;
     left: -100%;
 
+}
+
+/*Light/Dark mode*/
+
+.container-2 {
+    margin-top: 1rem;
+}
+
+.toggle-light span {
+    left: -160%;
 }

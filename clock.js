@@ -47,8 +47,8 @@ const textAD = document.querySelector(".toggle span");
 let active = false
 
 function toggle() {
-    let toggle = document.querySelector('.toggle')
-    active = !active
+    let toggle = document.querySelector('.toggle');
+    active = !active;
     if (active) {
         toggle.classList.add('active');
         analogClock.style.visibility = "hidden";
@@ -64,7 +64,34 @@ function toggle() {
     }
 };
 
-//POSITION
+//DARK/LIGHT MODE
+const body = document.querySelector('body');
+const textDL = document.querySelector('.container-2 span')
+
+let active1 = false;
+
+function lightMode() {
+    let toggleLight = document.querySelector('.toggle-light')
+    active1 = !active1;
+    if(active1){
+        toggleLight.classList.toggle('active');
+        body.classList.toggle('lightMode');
+        textDL.innerHTML = "Light Mode";
+    }
+    else{
+        toggleLight.classList.toggle('active');
+        body.classList.toggle('lightMode');
+        textDL.innerHTML = "Dark Mode";
+    }
+}
+
+
+
+
+
+
+
+//POSITION 
 
 const successCallback = (position) => {
     console.log(position);
