@@ -59,6 +59,9 @@
 /*Light/Dark mode*/
 
 .container-2 {
+    position: absolute;
+    top: 5%;
+    right: 2%;
     margin-top: 1rem;
 }
 
