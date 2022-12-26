@@ -35,7 +35,7 @@ setInterval(setDate, 1000);
 
 setDate;
 
-//CHECKED STATUS    
+//TOGGLES   
 const analogClock = document.querySelector(".analog-clock");
 const digitClock = document.querySelector(".digital-clock");
 
@@ -87,18 +87,34 @@ function lightMode() {
 
 
 
+//LOCATION
 
+const positionIcon = document.querySelector(".material-symbols-outlined");
 
+  const findMyState = () => {
 
+    const status = document.querySelector(".location");
 
-//POSITION 
+    const success = (position) => {
+        const latitude = position.coords.latitude;
+        const longitude = position.coords.longitude;
 
-const successCallback = (position) => {
-    console.log(position);
-  };
-  
-  const errorCallback = (error) => {
-    console.log(error);
-  };
-  
-  navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
+        const geoApiUrl = `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en`;
+
+        fetch(geoApiUrl)
+        .then(res => res.json())
+        .then(data =>{
+            status.innerHTML = data.city;
+        })
+    }
+
+    const error = () => {
+        console.log("error encountered!");
+    }
+
+    navigator.geolocation.getCurrentPosition(success, error);
+
+  }
+
+  positionIcon.addEventListener("click", findMyState);
+

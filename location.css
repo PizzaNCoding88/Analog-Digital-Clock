@@ -1,5 +1,5 @@
 .location-cont {
-    color: #fff;
+    color: var(--white);
     text-align: center;
 
     position: absolute;
@@ -14,4 +14,10 @@
     font-weight: bold;
     font-size: 1.5rem;
     padding-top: 1rem;
+}
+
+
+.material-symbols-outlined {
+  margin-top: 1rem;
+  cursor: pointer;
 }
