@@ -90,6 +90,7 @@ function lightMode() {
 //LOCATION
 
 const positionIcon = document.querySelector(".material-symbols-outlined");
+const locationText = document.querySelector(".location-txt");
 
   const findMyState = () => {
 
@@ -105,11 +106,17 @@ const positionIcon = document.querySelector(".material-symbols-outlined");
         .then(res => res.json())
         .then(data =>{
             status.innerHTML = data.city;
+            if(status.lenght !== 0){
+                status.style.fontSize = "1.5rem";
+                positionIcon.style.visibility = "hidden";
+                locationText.style.visibility = "hidden";
+            }
         })
     }
 
     const error = () => {
-        console.log("error encountered!");
+        status.style.fontSize = "1rem";
+        alert("Error!!!You have not authorised the browser to find your location!");
     }
 
     navigator.geolocation.getCurrentPosition(success, error);
