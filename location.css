@@ -21,3 +21,7 @@
   margin-top: 1rem;
   cursor: pointer;
 }
+
+.material-symbols-outlined:hover{
+    transform: scale(1.3);
+}
