@@ -85,6 +85,27 @@ function lightMode() {
     }
 }
 
+//AM-PM
+const amPmText = document.querySelector(".container-3 span");
+const amPmDiv = document.querySelector(".am-pm")
+let active2 = false;
+
+function amPm() {
+    const toggleAmPm = document.querySelector(".toggle-AM-PM");
+    active2 = !active2;
+    if(active2){
+        toggleAmPm.classList.toggle("active");
+        amPmText.innerHTML = "24 HRS";
+        amPmDiv.innerHTML = "";
+    }else{
+        toggleAmPm.classList.toggle("active");
+        amPmText.innerHTML = "AM/PM";
+        amPmDiv.innerHTML = "AM";
+    }
+
+
+}
+
 
 
 //LOCATION

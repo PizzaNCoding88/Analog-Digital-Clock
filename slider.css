@@ -79,5 +79,11 @@
 }
 
 .toggle-AM-PM span{
-    left: -60%;
+    left: -120%;
+}
+
+.am-pm{
+    display: inline;
+    color: var(--white);
+    font-size: 5rem;
 }
