@@ -20,8 +20,11 @@
 .material-symbols-outlined {
   margin-top: 1rem;
   cursor: pointer;
+
+  transition: transform 150ms linear;
 }
 
 .material-symbols-outlined:hover{
     transform: scale(1.3);
 }
+

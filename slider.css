@@ -1,6 +1,6 @@
 /*Analog/digital slider*/
 
-.toggle, .toggle-light {
+.toggle, .toggle-light, .toggle-AM-PM {
     position: relative;
     width: 40px;
     height: 20px;
@@ -45,7 +45,7 @@
     display: inline-block;
 }
 
-.toggle span, .toggle-light span{
+.toggle span, .toggle-light span, .toggle-AM-PM span{
     font-family: var(--font);
     font-weight: bold;
     color: var(--white);
@@ -67,4 +67,16 @@
 
 .toggle-light span {
     left: -160%;
+}
+
+/*AM/PM*/
+
+.container-3{
+    position: absolute;
+    right: 2%;
+    top: 13%;
+}
+
+.toggle-AM-PM span{
+    left: -60%;
 }
