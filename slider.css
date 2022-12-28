@@ -68,22 +68,3 @@
 .toggle-light span {
     left: -160%;
 }
-
-/*AM/PM*/
-
-.container-3{
-    position: absolute;
-    right: 2%;
-    top: 10%;
-    margin-top: 4.2%;
-}
-
-.toggle-AM-PM span{
-    left: -120%;
-}
-
-.am-pm{
-    display: inline;
-    color: var(--white);
-    font-size: 5rem;
-}
