@@ -50,7 +50,7 @@ body{
 @media (max-width: 600px){
     .container{
         width: 12rem;
-        padding: 5rem 3rem;
+        padding: 17rem 3.5rem;
     }
 
     .container .digital-clock__hours,
