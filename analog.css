@@ -126,3 +126,9 @@
     transform-origin: 100% 0;
 }
 
+@media (max-width: 600px){
+    .analog-clock{
+        height: 15rem;
+        width: 15rem;
+    }
+}

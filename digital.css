@@ -23,3 +23,11 @@
     margin-left: 0.5rem;
 
 }
+
+@media (max-width: 600px){
+     .container .digital-clock__hours,
+    .container .digital-clock__minutes,
+    .container .digital-clock__seconds{
+        font-size: 3rem;
+    }
+}

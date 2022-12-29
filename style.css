@@ -46,3 +46,16 @@ body{
     border-radius: 10px;
     box-shadow: var(--box-sh-dm);
 }
+
+@media (max-width: 600px){
+    .container{
+        width: 12rem;
+        padding: 5rem 3rem;
+    }
+
+    .container .digital-clock__hours,
+    .container .digital-clock__minutes,
+    .container .digital-clock__seconds{
+        font-size: 3rem;
+    }
+}
